@@ -127,7 +127,10 @@ const Home: NextPage = () => {
     />
     </div>
     <Button size="sm" shadow color="gradient" css={{"width": "13.4%", "marginTop": "10px"}}>Submit</Button>
-
+      <br>
+      </br>
+      <br>
+      </br>
     </Container>
   )
 }
