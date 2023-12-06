@@ -1,2 +1,2 @@
 # landingtest
-(https://landingtest-ecru.vercel.app/)[vercel link]
+[vercel link](https://landingtest-ecru.vercel.app/)
