@@ -7,8 +7,12 @@ import InfoCard from '../components/InfoCard';
 import { Table } from "@nextui-org/react";
 import Link from 'next/link';
 import {Textarea} from "@nextui-org/react";
+import NewsletterForm from '../components/NewsletterForm'
+
 
 const Home: NextPage = () => {
+
+const externalLink = '/newsletter';
   return (
     <Container>
       {/* Navbar */}
@@ -19,21 +23,19 @@ const Home: NextPage = () => {
           </Text>
         </Navbar.Brand>
         <Navbar.Content hideIn="md">
-          <Navbar.Link href="#">View Products</Navbar.Link>
-          <Navbar.Link href="#">Discover</Navbar.Link>
-          <Navbar.Link href="#">Contact Us</Navbar.Link>
+          <Navbar>Established in 1970</Navbar>
         </Navbar.Content>
         <Navbar.Content>
-          <Navbar.Link href="#">Try Our Flavors</Navbar.Link>
+          <Navbar.Link href="/newsletter">More</Navbar.Link>
         </Navbar.Content>
       </Navbar>
       {/* Jumbotron */}
       <Grid.Container justify="center" css={{"height": "500px", "borderRadius": "10px", "backgroundImage": "url(https://cdn.discordapp.com/attachments/819846167634116611/1181700264575635506/AdobeStock_284656117_Editorial_Use_Only_1_1.png?ex=65820322&is=656f8e22&hm=cf02243b50ff5ce5a05c16b808e0d6c91d4340d7c7e37f9cf79f928706a3f5a4&)"}}>
         <Grid xs={12} sm={6} alignItems="center">
           <Col css={{"width": "100%"}}>
-            <Text weight={"bold"} size={70} css={{"textAlign": "center"}}>Watch Out For Our</Text>
-            <Text weight={"bold"} size={70} css={{"textAlign": "center"}}>New Flavors!</Text>
-            <Button size="md" shadow color="gradient" css={{"width": "100%", "marginTop": "10px"}}>Learn More</Button>
+            <Text weight={"bold"} size={60} css={{"textAlign": "center"}}>When it comes to drinks,</Text>
+            <Text weight={"bold"} size={60} css={{"textAlign": "center"}}>we're tonic artisans.</Text>
+            <Text weight={"normal"} size={25} css={{"textAlign": "center"}}>Known for our innovative flavor profiles and commitment to sustainability, we strive to charm you with our effervescent beverages that redefine the refreshing experience.</Text>
           </Col>
         </Grid>
       </Grid.Container>
@@ -46,7 +48,18 @@ const Home: NextPage = () => {
           <Col css={{"width": "100%"}}>
             <Text weight={"bold"} size={70} css={{"textAlign": "center"}}>Drink. Shop.</Text>
             <Text weight={"bold"} size={70} css={{"textAlign": "center"}}>Taste. Smile.</Text>
-            <Button size="md" shadow color="gradient" css={{"width": "100%", "marginTop": "10px"}}>Discover More</Button>
+            <Text weight={"normal"} size={35} css={{"textAlign": "center"}}>Discover our rewards program, featuring soda coupons and chances to try new flavors.</Text>
+            <Link href={externalLink} passHref>
+      <Button
+        as="a" // Use the 'a' element for a link
+        size="md"
+        shadow
+        color="gradient"
+        css={{"width": "100%", "marginTop": "10px"}}
+      >
+        Discover More
+      </Button>
+    </Link>
           </Col>
         </Grid>
       </Grid.Container>
@@ -84,49 +97,24 @@ const Home: NextPage = () => {
           />
         </Grid>
       </Grid.Container>
-      <Table
-      aria-label="Standard table with static content"
-      css={{
-        height: "auto",
-        minWidth: "100%",
-      }}
-    >
-      <Table.Header>
-        <Table.Column>HELP</Table.Column>
-        <Table.Column>SHOP</Table.Column>
-        <Table.Column>LEGAL</Table.Column>
-      </Table.Header>
-      <Table.Body>
-        <Table.Row key="1">
-          <Table.Cell><Link href="#">Contact Us</Link></Table.Cell>
-          <Table.Cell><Link href="#">Online Store</Link></Table.Cell>
-          <Table.Cell><Link href="#">Company</Link></Table.Cell>
-        </Table.Row>
-        <Table.Row key="2">
-          <Table.Cell><Link href="#">Terms & Conditions</Link></Table.Cell>
-          <Table.Cell><Link href="#">Product Facts</Link></Table.Cell>
-          <Table.Cell><Link href="#">Careers</Link></Table.Cell>
-        </Table.Row>
-        <Table.Row key="3">
-          <Table.Cell><Link href="#">Privacy Policy</Link></Table.Cell>
-          <Table.Cell><Link href="#">Store Locator</Link></Table.Cell>
-          <Table.Cell><Link href="#">Cookie Settings</Link></Table.Cell>
-        </Table.Row>
-      </Table.Body>
-    </Table>
     <br>
     </br>
     <br>
     </br>
     <div className="flex w-full flex-wrap md:flex-nowrap mb-6 md:mb-0 gap-4">
-    <Textarea
-      minRows={1}
-      label="Subscribe To Our Newsletter"
-      placeholder="Enter your email here:"
-      className="max-w-xs"
-    />
     </div>
-    <Button size="sm" shadow color="gradient" css={{"width": "13.4%", "marginTop": "10px"}}>Submit</Button>
+    <Link href={externalLink} passHref>
+      <Button
+        as="a" // Use the 'a' element for an external link
+        size="sm"
+        shadow
+        color="gradient"
+        css={{"width": "20%", "marginTop": "10px"}}
+      >
+        To Our Newsletter
+      </Button>
+      
+    </Link>
       <br>
       </br>
       <br>

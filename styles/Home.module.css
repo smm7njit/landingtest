@@ -108,6 +108,32 @@
   margin-left: 0.5rem;
 }
 
+.centeredContent {
+  display: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%; /* Optionally, if you want to center vertically within the viewport */
+  border: 10px;
+}
+
+.center {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height:80vh;
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+  background-image: url(/ne_1.png);
+  background-size: cover;
+  background-position: center;
+
+}
+
+.centered {
+  display: center;
+  justify-content: center;
+}
 @media (max-width: 600px) {
   .grid {
     width: 100%;
