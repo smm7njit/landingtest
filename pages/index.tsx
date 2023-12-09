@@ -23,7 +23,7 @@ const externalLink = '/newsletter';
           </Text>
         </Navbar.Brand>
         <Navbar.Content hideIn="md">
-          <Navbar>Established in 1970</Navbar>
+          <Navbar> Established in 1970</Navbar>
         </Navbar.Content>
         <Navbar.Content>
           <Navbar.Link href="/newsletter">More</Navbar.Link>
@@ -34,7 +34,7 @@ const externalLink = '/newsletter';
         <Grid xs={12} sm={6} alignItems="center">
           <Col css={{"width": "100%"}}>
             <Text weight={"bold"} size={60} css={{"textAlign": "center"}}>When it comes to drinks,</Text>
-            <Text weight={"bold"} size={60} css={{"textAlign": "center"}}>we're tonic artisans.</Text>
+            <Text weight={"bold"} size={60} css={{"textAlign": "center"}}>we are tonic artisans.</Text>
             <Text weight={"normal"} size={25} css={{"textAlign": "center"}}>Known for our innovative flavor profiles and commitment to sustainability, we strive to charm you with our effervescent beverages that redefine the refreshing experience.</Text>
           </Col>
         </Grid>
