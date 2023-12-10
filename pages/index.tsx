@@ -35,7 +35,7 @@ const externalLink = '/newsletter';
           <Col css={{"width": "100%"}}>
             <Text weight={"bold"} size={60} css={{"textAlign": "center"}}>When it comes to drinks,</Text>
             <Text weight={"bold"} size={60} css={{"textAlign": "center"}}>we&#39;re tonic artisans.</Text>
-            <Text weight={"normal"} size={25} css={{"textAlign": "center"}}>Known for our innovative flavor profiles and commitment to sustainability, we strive to charm you with our effervescent beverages that redefine the refreshing experience.</Text>
+            <Text weight={"normal"} size={25} css={{"textAlign": "center"}}>We always guarantee that our beverages will amaze your taste buds.</Text>
           </Col>
         </Grid>
       </Grid.Container>
