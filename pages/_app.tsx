@@ -8,6 +8,15 @@ const darkTheme = createTheme({type: "dark"});
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <NextUIProvider theme={darkTheme}>
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-DD3RM7V9YG" strategy="afterInteractive" />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-DD3RM7V9YG');
+        `}
+      </Script>
       <Component {...pageProps} />
     </NextUIProvider>
     
