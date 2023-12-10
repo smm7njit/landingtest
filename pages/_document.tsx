@@ -16,6 +16,15 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>{CssBaseline.flush()}
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-DD3RM7V9YG" strategy="afterInteractive" />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-DD3RM7V9YG');
+        `}
+      </Script>
         </Head>
         <body>
           <Main />
