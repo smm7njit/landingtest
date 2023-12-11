@@ -27,8 +27,8 @@ class MyDocument extends Document {
         <Head>{CssBaseline.flush()}
 
 
-          <Script async src="https://www.googletagmanager.com/gtag/js?id=G-DD3RM7V9YG"></Script>
-          <Script>
+          <Script id="gtag-script" async src="https://www.googletagmanager.com/gtag/js?id=G-DD3RM7V9YG"></Script>
+          <Script id="gtag-inline-script" strategy="lazy-onload">
             {`
     window.dataLayer = window.dataLayer || [];
     function gtag(){window.dataLayer.push(arguments);}
