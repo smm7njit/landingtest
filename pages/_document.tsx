@@ -26,11 +26,12 @@ class MyDocument extends Document {
       <Html lang="en">
         <Head>{CssBaseline.flush()}
 
-          <Script id="gtag-script" async src="https://www.googletagmanager.com/gtag/js?id=G-DD3RM7V9YG"></Script>
-          <Script id="gtag-inline-script">
+
+          <Script async src="https://www.googletagmanager.com/gtag/js?id=G-DD3RM7V9YG"></Script>
+          <Script>
             {`
     window.dataLayer = window.dataLayer || [];
-    function gtag(){window['dataLayer'].push(arguments)}
+    function gtag(){window.dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-DD3RM7V9YG');
   `}
