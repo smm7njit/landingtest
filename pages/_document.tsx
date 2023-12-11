@@ -3,6 +3,7 @@ import Document, { Html, Head, Main, NextScript, DocumentContext } from "next/do
 import { CssBaseline } from "@nextui-org/react";
 import Script from "next/script";
  
+const GA_TRACKING_ID = process.env.GTAG;
 class MyDocument extends Document {
   static async getInitialProps(ctx : DocumentContext) {
     const initialProps = await Document.getInitialProps(ctx);
@@ -16,21 +17,23 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>{CssBaseline.flush()}
-          <Script
-            strategy="lazyOnload"
-            src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GOOGLE_ANALYTICS}`}
-          />
-
-          <Script id="ga-script" strategy="lazyOnload">
-            {`
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', '${process.env.GOOGLE_ANALYTICS}', {
-      page_path: window.location.pathname,
-    });
-        `}
-          </Script>
+        <script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+        />
+        <script
+          // eslint-disable-next-line react/no-danger
+          dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_TRACKING_ID}', {
+            page_path: window.location.pathname,
+            });
+          `,
+          }}
+        />
         </Head>
         <body>
           <Main />
