@@ -2,6 +2,14 @@ import React from "react";
 import Document, { Html, Head, Main, NextScript, DocumentContext } from "next/document";
 import { CssBaseline } from "@nextui-org/react";
 import Script from "next/script";
+
+declare global {
+  interface Window {
+    dataLayer: any[];
+  }
+}
+
+
  
 const GA_TRACKING_ID = process.env.GTAG;
 class MyDocument extends Document {
@@ -17,23 +25,16 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>{CssBaseline.flush()}
-        <script
-          async
-          src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
-        />
-        <script
-          // eslint-disable-next-line react/no-danger
-          dangerouslySetInnerHTML={{
-          __html: `
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-DD3RM7V9YG"></script>
+          <script>
             window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
+            function gtag(){window['dataLayer'].push(arguments)}
             gtag('js', new Date());
-            gtag('config', '${GA_TRACKING_ID}', {
-            page_path: window.location.pathname,
-            });
-          `,
-          }}
-        />
+
+            gtag('config', 'G-DD3RM7V9YG');
+          </script>
+
         </Head>
         <body>
           <Main />

@@ -3,7 +3,6 @@ import type { AppProps } from 'next/app'
 import { NextUIProvider, createTheme} from '@nextui-org/react';
 import Script from 'next/script';
 import { useEffect } from 'react';
-import {initGA, logPageView } from '../components/ga';
 import ReactGA from 'react-ga';
 
 
