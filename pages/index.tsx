@@ -15,6 +15,7 @@ const Home: NextPage = () => {
 const externalLink = '/newsletter';
   return (
     <Container>
+      
       {/* Navbar */}
       <Navbar isCompact variant={"static"}>
         <Navbar.Brand>
