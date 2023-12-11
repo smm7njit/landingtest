@@ -13,12 +13,12 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <NextUIProvider theme={darkTheme}>
       <Script
-  strategy="lazyOnload"
-  src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GOOGLE_ANALYTICS}`}
-/>
+        strategy="lazyOnload"
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GOOGLE_ANALYTICS}`}
+      />
 
-<Script id="ga-script" strategy="lazyOnload">
-  {`
+      <Script id="ga-script" strategy="lazyOnload">
+        {`
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
@@ -26,7 +26,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       page_path: window.location.pathname,
     });
         `}
-</Script>
+      </Script>
       <Component {...pageProps} />
     </NextUIProvider>
     
