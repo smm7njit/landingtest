@@ -4,6 +4,7 @@ import { NextUIProvider, createTheme} from '@nextui-org/react';
 import Script from 'next/script';
 import { useEffect } from 'react';
 import ReactGA from 'react-ga';
+import GoogleAnalytics from "@bradgarropy/next-google-analytics"
 
 
 
@@ -11,7 +12,9 @@ const darkTheme = createTheme({type: "dark"});
 
 function MyApp({ Component, pageProps,  }: AppProps) {
   return (
+    
     <NextUIProvider theme={darkTheme}>
+      <GoogleAnalytics measurementId='G-DD3RM7V9YG' />
       <Component {...pageProps} />
     </NextUIProvider>
     

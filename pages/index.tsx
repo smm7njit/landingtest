@@ -10,6 +10,9 @@ import {Textarea} from "@nextui-org/react";
 import NewsletterForm from '../components/NewsletterForm'
 
 
+
+
+
 const Home: NextPage = () => {
 
 const externalLink = '/newsletter';
