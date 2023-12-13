@@ -5,6 +5,9 @@ import Script from 'next/script';
 import { useEffect } from 'react';
 import ReactGA from 'react-ga';
 import GoogleAnalytics from "@bradgarropy/next-google-analytics"
+import CookieConsent, {getCookieConsentValue} from "react-cookie-consent";
+
+
 
 
 

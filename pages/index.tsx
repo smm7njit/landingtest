@@ -8,6 +8,7 @@ import { Table } from "@nextui-org/react";
 import Link from 'next/link';
 import {Textarea} from "@nextui-org/react";
 import NewsletterForm from '../components/NewsletterForm'
+import CookieConsent from 'react-cookie-consent';
 
 
 
@@ -18,6 +19,9 @@ const Home: NextPage = () => {
 const externalLink = '/newsletter';
   return (
     <Container>
+      <CookieConsent>
+      We use cookies to improve your experience. By your continued use of this site you accept such use.
+      </CookieConsent>
       
       {/* Navbar */}
       <Navbar isCompact variant={"static"}>
@@ -100,6 +104,14 @@ const externalLink = '/newsletter';
             followerCount="81K"
           />
         </Grid>
+      </Grid.Container>
+      <Grid.Container gap={2}>
+      <InfoCard
+            label=""
+            title="Follow Our Instagram!"
+            imageURL="https://thephotographerspassport.com/wp-content/uploads/2019/06/Insta_Presets_Featured22-1440x960.jpg"
+            followerCount="52K"
+          />
       </Grid.Container>
     <br>
     </br>

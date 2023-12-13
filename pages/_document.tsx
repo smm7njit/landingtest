@@ -1,13 +1,11 @@
 import React from "react";
 import Document, { Html, Head, Main, NextScript, DocumentContext } from "next/document";
 import { CssBaseline } from "@nextui-org/react";
+import CookieConsent, {getCookieConsentValue} from "react-cookie-consent";
 
 
-declare global {
-  interface Window {
-    dataLayer: any[];
-  }
-}
+
+
 
 
 
