@@ -105,14 +105,6 @@ const externalLink = '/newsletter';
           />
         </Grid>
       </Grid.Container>
-      <Grid.Container gap={2}>
-      <InfoCard
-            label=""
-            title="Follow Our Instagram!"
-            imageURL="https://thephotographerspassport.com/wp-content/uploads/2019/06/Insta_Presets_Featured22-1440x960.jpg"
-            followerCount="52K"
-          />
-      </Grid.Container>
     <br>
     </br>
     <br>
