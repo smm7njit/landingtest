@@ -44,3 +44,9 @@ test('Check if second jumbotron component is visible', async ({ page }) => {
   await page.goto('http://localhost:3000/');
   await page.locator('[id="__next"] div').filter({ hasText: 'Drink. Shop.Taste. Smile.' }).nth(2).click();
 });
+
+test('Check if top half of second jumbotron header text is not empty', async ({ page }) => {
+  await page.goto('http://localhost:3000/');
+  await page.getByText('Drink. Shop.').click();
+});
+
