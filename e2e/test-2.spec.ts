@@ -50,3 +50,8 @@ test('Check if top half of second jumbotron header text is not empty', async ({ 
   await page.getByText('Drink. Shop.').click();
 });
 
+test('Test if second jumbotron subtext is not empty', async ({ page }) => {
+  await page.goto('http://localhost:3000/');
+  await page.getByText('Discover our rewards program').click();
+});
+
