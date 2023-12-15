@@ -80,6 +80,11 @@ test('Test cookie policy text visibility', async ({ page }) => {
   await page.getByText('We use cookies to improve').click();
 });
 
+test('Check cookie consent button functionlity', async ({ page }) => {
+  await page.goto('http://localhost:3000/');
+  await page.getByLabel('Accept cookies').click();
+});
+
 
 
 
