@@ -55,3 +55,7 @@ test('Test if second jumbotron subtext is not empty', async ({ page }) => {
   await page.getByText('Discover our rewards program').click();
 });
 
+test('Test if Discover More button is functional', async ({ page }) => {
+  await page.goto('http://localhost:3000/');
+  await page.getByRole('button', { name: 'Discover More' }).click();
+});
