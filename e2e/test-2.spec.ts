@@ -24,3 +24,8 @@ test('Check if Home link functions', async ({ page }) => {
   await page.goto('http://localhost:3000/');
   await page.getByRole('link', { name: 'Home' }).click();
 });
+
+test('Check if second part of hero section is present', async ({ page }) => {
+  await page.goto('http://localhost:3000/');
+  await page.getByText('we\'re tonic artisans.').click();
+});
