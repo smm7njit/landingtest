@@ -84,37 +84,43 @@ const externalLink = '/newsletter';
       {/* 3 Displaying Product Cards */}
       <Grid.Container gap={2}>
         <Grid xs={12} sm={4}>
-          <InfoCard
-            label=""
-            title="Follow Our Instagram!"
-            imageURL="https://thephotographerspassport.com/wp-content/uploads/2019/06/Insta_Presets_Featured22-1440x960.jpg"
-            followerCount="52K"
-          />
-        </Grid>
-        <Grid xs={12} sm={4}>
-          <InfoCard
-            label=""
-            title="Follow Our Twitter!"
-            imageURL="https://thefederalist.com/wp-content/uploads/2021/09/twitter-e1631558832208.jpeg"
-            followerCount="131.5K"
-          />
-        </Grid>
-        <Grid xs={12} sm={4}>
-          <InfoCard
-            label=""
-            title="Subscribe to our YouTube!"
-            imageURL="https://3.bp.blogspot.com/-G7kWVEXkp5o/XkZPuKQ5oKI/AAAAAAAAM08/ujInMimy0f4mg5E2_-qq94rTCkM7G-hXQCLcBGAsYHQ/s1360/youtube-diw.jpg"
-            followerCount="81K"
-          />
-        </Grid>
-      </Grid.Container>
-      <Grid.Container gap={2}>
+        <Link href="https://www.instagram.com/">
+        <a>
       <InfoCard
             label=""
             title="Follow Our Instagram!"
             imageURL="https://thephotographerspassport.com/wp-content/uploads/2019/06/Insta_Presets_Featured22-1440x960.jpg"
             followerCount="52K"
           />
+        </a>
+        </Link>
+        </Grid>
+        <Grid xs={12} sm={4}>
+        <Link href="https://twitter.com/explore">
+        <a>
+      <InfoCard
+            label=""
+            title="Follow Our Twitter!"
+            imageURL="https://thefederalist.com/wp-content/uploads/2021/09/twitter-e1631558832208.jpeg"
+            followerCount="52K"
+          />
+        </a>
+        </Link>
+        </Grid>
+        <Grid xs={12} sm={4}>
+        <Link href="https://www.youtube.com/">
+        <a>
+      <InfoCard
+            label=""
+            title="Subscribe to our YouTube!"
+            imageURL="https://th.bing.com/th/id/OIP.zLqRgHv5VcaWgz7CQSMuUgHaE8?rs=1&pid=ImgDetMain"
+            followerCount="52K"
+          />
+        </a>
+        </Link>
+        </Grid>
+      </Grid.Container>
+      <Grid.Container gap={2}>
       </Grid.Container>
     <br>
     </br>
