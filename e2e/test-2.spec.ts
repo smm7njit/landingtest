@@ -39,3 +39,8 @@ test('Check if first jumbotron component is visible', async ({ page }) => {
   await page.goto('http://localhost:3000/');
   await page.locator('[id="__next"] div').filter({ hasText: 'When it comes to drinks,we\'re' }).nth(2).click();
 });
+
+test('Check if second jumbotron component is visible', async ({ page }) => {
+  await page.goto('http://localhost:3000/');
+  await page.locator('[id="__next"] div').filter({ hasText: 'Drink. Shop.Taste. Smile.' }).nth(2).click();
+});
