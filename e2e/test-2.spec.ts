@@ -29,3 +29,8 @@ test('Check if second part of hero section is present', async ({ page }) => {
   await page.goto('http://localhost:3000/');
   await page.getByText('we\'re tonic artisans.').click();
 });
+
+test('Check if subtext of hero section is present', async ({ page }) => {
+  await page.goto('http://localhost:3000/');
+  await page.getByText('We always guarantee that our').click();
+});
