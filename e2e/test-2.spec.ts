@@ -15,8 +15,12 @@ test('Check if newsletter page text is present', async ({ page }) => {
   await page.getByRole('heading', { name: 'Sign up for newsletters and' }).click();
 });
 
-test('Check if email box is present', async ({ page }) => {
+test('Check if email box placeholder is present', async ({ page }) => {
   await page.goto('http://localhost:3000/');
   await page.getByPlaceholder('Your email').click();
+});
 
+test('Check if Home link functions', async ({ page }) => {
+  await page.goto('http://localhost:3000/');
+  await page.getByRole('link', { name: 'Home' }).click();
 });
