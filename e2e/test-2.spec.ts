@@ -59,3 +59,23 @@ test('Test if Discover More button is functional', async ({ page }) => {
   await page.goto('http://localhost:3000/');
   await page.getByRole('button', { name: 'Discover More' }).click();
 });
+
+test('Test if first social media link is visible', async ({ page }) => {
+  await page.goto('http://localhost:3000/');
+  await page.locator('img').first().click();
+});
+
+test('Test if second social media link is visible', async ({ page }) => {
+  await page.goto('http://localhost:3000/');
+  await page.locator('img').nth(1).click();
+});
+
+test('Test if second social media link is visible', async ({ page }) => {
+  await page.goto('http://localhost:3000/');
+  await page.locator('img').nth(2).click();
+});
+
+
+
+
+
