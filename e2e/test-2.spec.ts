@@ -75,6 +75,11 @@ test('Test if third social media link is visible', async ({ page }) => {
   await page.locator('img').nth(2).click();
 });
 
+test('Test cookie policy text visibility', async ({ page }) => {
+  await page.goto('http://localhost:3000/');
+  await page.getByText('We use cookies to improve').click();
+});
+
 
 
 
