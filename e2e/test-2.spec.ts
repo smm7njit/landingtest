@@ -34,3 +34,8 @@ test('Check if subtext of hero section is present', async ({ page }) => {
   await page.goto('http://localhost:3000/');
   await page.getByText('We always guarantee that our').click();
 });
+
+test('Check if first jumbotron component is visible', async ({ page }) => {
+  await page.goto('http://localhost:3000/');
+  await page.locator('[id="__next"] div').filter({ hasText: 'When it comes to drinks,we\'re' }).nth(2).click();
+});
