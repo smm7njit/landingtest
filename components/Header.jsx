@@ -9,7 +9,7 @@ const Header = () => {
             <meta name="description" content="Portfolio Website" />
             <meta name="keywords" content="resume, jobs, career" />
         </Head>
-        <div>Page Content</div>
+        <div></div>
       </>
     );
   };

@@ -85,6 +85,11 @@ test('Check cookie consent button functionlity', async ({ page }) => {
   await page.getByLabel('Accept cookies').click();
 });
 
+test('Check SEO Meta Keywords', async ({ page }) => {
+  await page.goto('http://localhost:3000/');
+  const metaKeywords = await page.getAttribute('meta[name="keywords"]', 'resume, jobs, career');
+  await expect(metaKeywords).not.toBe('');
+});
 
 
 

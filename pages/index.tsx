@@ -9,6 +9,7 @@ import Link from 'next/link';
 import {Textarea} from "@nextui-org/react";
 import NewsletterForm from '../components/NewsletterForm'
 import CookieConsent from 'react-cookie-consent';
+import Header from '../components/Header';
 
 
 
@@ -22,6 +23,8 @@ const externalLink = '/newsletter';
       <CookieConsent>
       We use cookies to improve your experience. By your continued use of this site you accept such use.
       </CookieConsent>
+
+      <Header />
       
       {/* Navbar */}
       <Navbar isCompact variant={"static"}>
