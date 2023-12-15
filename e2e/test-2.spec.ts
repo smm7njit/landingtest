@@ -91,6 +91,12 @@ test('Check SEO Meta Keywords', async ({ page }) => {
   await expect(metaKeywords).not.toBe('');
 });
 
+test('Check SEO Meta Description', async ({ page }) => {
+  await page.goto('http://localhost:3000/');
+  const metaDescription = await page.getAttribute('meta[name="description"]', 'This is an example resume.');
+  await expect(metaDescription).not.toBe('');
+});
+
 
 
 
