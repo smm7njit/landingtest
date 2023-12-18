@@ -15,14 +15,14 @@ const Newsletter = () => {
 const homeLink = '/index';
   return (
     <Container>
-        <Navbar isCompact variant={"static"}>
+        <Navbar isCompact variant={"static"} css={{"backgroundImage": "url(https://cdn.suwalls.com/wallpapers/abstract/purple-squares-43497-2560x1600.jpg)"}}>
         <Navbar.Brand>
           <Text b color="inherit">
-            Our Soda Brand
+            Velvet.
           </Text>
         </Navbar.Brand>
         <Navbar.Content hideIn="md">
-          <Navbar>Established in 1970</Navbar>
+          <Navbar.Brand> Established in 1970</Navbar.Brand>
         </Navbar.Content>
         <Navbar.Content>
           <Navbar.Link href="/">Home</Navbar.Link>

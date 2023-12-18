@@ -21,7 +21,7 @@ const externalLink = '/newsletter';
   return (
     <Container>
       <CookieConsent>
-      We use cookies to improve your experience. By your continued use of this site you accept such use.
+      We use cookies to improve your experience! By your continued use of this site you accept such use.
       </CookieConsent>
 
       <Header />
