@@ -13,7 +13,7 @@ import Header from '../components/Header';
 import { createTheme, NextUIProvider } from "@nextui-org/react"
 
 
-
+<title>IS Final</title>
 
 
 const Home: NextPage = () => {
