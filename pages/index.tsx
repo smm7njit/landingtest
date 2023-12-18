@@ -133,7 +133,7 @@ const externalLink = '/newsletter';
       <InfoCard
             label=""
             title="Subscribe to our YouTube!"
-            imageURL="thirdinfo.jpg"
+            imageURL="info3.png"
             followerCount="52K"
           />
         </a>
