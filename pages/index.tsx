@@ -13,7 +13,7 @@ import Header from '../components/Header';
 import { createTheme, NextUIProvider } from "@nextui-org/react"
 
 
-<title>IS Final</title>
+
 
 
 const Home: NextPage = () => {
@@ -21,6 +21,7 @@ const Home: NextPage = () => {
 const externalLink = '/newsletter';
   return (
     <Container>
+      <title>IS Final</title>
       <div className='bg red-500'>
       <CookieConsent>
       We use cookies to improve your experience. By your continued use of this site you accept such use.
