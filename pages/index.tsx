@@ -10,6 +10,7 @@ import {Textarea} from "@nextui-org/react";
 import NewsletterForm from '../components/NewsletterForm'
 import CookieConsent from 'react-cookie-consent';
 import Header from '../components/Header';
+import { createTheme, NextUIProvider } from "@nextui-org/react"
 
 
 
@@ -27,25 +28,29 @@ const externalLink = '/newsletter';
       <Header />
       
       {/* Navbar */}
-      <Navbar isCompact variant={"static"}>
+      <Navbar isCompact variant={"static"} css={{"backgroundImage": "url(https://cdn.suwalls.com/wallpapers/abstract/purple-squares-43497-2560x1600.jpg)"}}>
         <Navbar.Brand>
           <Text b color="inherit">
-            Our Soda Brand
+            Velvet.
           </Text>
         </Navbar.Brand>
         <Navbar.Content hideIn="md">
-          <Navbar> Established in 1970</Navbar>
+          <Navbar.Brand> Established in 1970</Navbar.Brand>
         </Navbar.Content>
         <Navbar.Content>
           <Navbar.Link href="/newsletter">More</Navbar.Link>
         </Navbar.Content>
       </Navbar>
+      <br>
+      </br>
+      <br>
+      </br>
       {/* Jumbotron */}
-      <Grid.Container justify="center" css={{"height": "500px", "borderRadius": "10px", "backgroundImage": "url(https://cdn.discordapp.com/attachments/819846167634116611/1181700264575635506/AdobeStock_284656117_Editorial_Use_Only_1_1.png?ex=65820322&is=656f8e22&hm=cf02243b50ff5ce5a05c16b808e0d6c91d4340d7c7e37f9cf79f928706a3f5a4&)"}}>
+      <Grid.Container justify="center" css={{"height": "500px", "borderRadius": "10px",  "backgroundImage": "url(https://th.bing.com/th/id/R.f510f8cf726d4c6684a9c5e36c0d47a4?rik=%2bXLr021dVJ1xYw&pid=ImgRaw&r=0)",}}>
         <Grid xs={12} sm={6} alignItems="center">
           <Col css={{"width": "100%"}}>
-            <Text weight={"bold"} size={60} css={{"textAlign": "center"}}>When it comes to drinks,</Text>
-            <Text weight={"bold"} size={60} css={{"textAlign": "center"}}>we&#39;re tonic artisans.</Text>
+            <Text weight={"bold"} size={60} css={{"textAlign": "center"}}>When it comes to beverages,</Text>
+            <Text weight={"bold"} size={60} css={{"textAlign": "center"}}>we&#39;re liquid craftsmen.</Text>
             <Text weight={"normal"} size={25} css={{"textAlign": "center"}}>We always guarantee that our beverages will amaze your taste buds.</Text>
           </Col>
         </Grid>
@@ -54,7 +59,7 @@ const externalLink = '/newsletter';
       </br>
       <br>
       </br>
-      <Grid.Container justify="center" css={{"height": "500px", "borderRadius": "10px", "backgroundImage": "url(https://cdn.discordapp.com/attachments/819846167634116611/1181704573837119599/image_2.png?ex=65820725&is=656f9225&hm=78343c5166dedd43cd0a9c93d7aa5fce82d6ebc506a76cbca0ee69c7c8afb0c8&)"}}>
+      <Grid.Container justify="center" css={{"height": "500px", "borderRadius": "10px", "backgroundImage": "url(https://onthegas.org/wp-content/uploads/2019/02/alcohol-cocktail-purple-people-eater.jpg)"}}>
         <Grid xs={12} sm={6} alignItems="center">
           <Col css={{"width": "100%"}}>
             <Text weight={"bold"} size={70} css={{"textAlign": "center"}}>Drink. Shop.</Text>
@@ -78,6 +83,10 @@ const externalLink = '/newsletter';
       </br>
       <br>
       </br>
+
+      <div className="justify-center place-self-center">
+          <h3>Social Media</h3>
+      </div>
 
 
 
