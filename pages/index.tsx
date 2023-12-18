@@ -10,8 +10,7 @@ import {Textarea} from "@nextui-org/react";
 import NewsletterForm from '../components/NewsletterForm'
 import CookieConsent from 'react-cookie-consent';
 import Header from '../components/Header';
-import { css } from '@nextui-org/react';
-
+import { createTheme, NextUIProvider } from "@nextui-org/react"
 
 
 
@@ -22,8 +21,9 @@ const Home: NextPage = () => {
 const externalLink = '/newsletter';
   return (
     <Container>
+      <div className='bg red-500'>
       <CookieConsent>
-      We use cookies to improve your experience! By your continued use of this site you accept such use.
+      We use cookies to improve your experience. By your continued use of this site you accept such use.
       </CookieConsent>
 
       <Header />
@@ -56,7 +56,7 @@ const externalLink = '/newsletter';
       <br>
       </br>
       {/* Jumbotron */}
-      <Grid.Container justify="center" css={{"height": "500px", "borderRadius": "10px",  "backgroundImage": "url(https://cdn.discordapp.com/attachments/1171889168062894171/1186201476503191642/AdobeStock_127177796_1_1.png?ex=65926336&is=657fee36&hm=ede66971e31eb64f50cd4448c244ca4800a18fa56448a7addd07f0edb2fe2f56&)",}}>
+      <Grid.Container justify="center" css={{"height": "500px", "borderRadius": "10px",  "backgroundImage": "url(/jumbo.png)",}}>
         <Grid xs={12} sm={6} alignItems="center">
           <Col css={{"width": "100%"}}>
             <Text weight={"bold"} size={60} css={{"textAlign": "center"}}>When it comes to beverages,</Text>
@@ -69,7 +69,7 @@ const externalLink = '/newsletter';
       </br>
       <br>
       </br>
-      <Grid.Container justify="center" css={{"height": "500px", "borderRadius": "10px", "backgroundImage": "url(https://cdn.discordapp.com/attachments/918054777538117642/1186214740142329886/AdobeStock_284656117_Editorial_Use_Only_1_4.png?ex=65926f90&is=657ffa90&hm=9bf5249984bbc6668c44ac0bf69f3a995f0be8ce1234c3b214e72379252bc71c&)"}}>
+      <Grid.Container justify="center" css={{"height": "500px", "borderRadius": "10px", "backgroundImage": "url(/jumbotwo.png)"}}>
         <Grid xs={12} sm={6} alignItems="center">
           <Col css={{"width": "100%"}}>
             <Text weight={"bold"} size={70} css={{"textAlign": "center"}}>Drink. Shop.</Text>
@@ -79,6 +79,7 @@ const externalLink = '/newsletter';
       <Button
         as="a" // Use the 'a' element for a link
         size="md"
+        shadow
         color="error"
         css={{"width": "100%", "marginTop": "10px"}}
       >
@@ -107,7 +108,7 @@ const externalLink = '/newsletter';
       <InfoCard
             label=""
             title="Follow Our Instagram!"
-            imageURL="https://thephotographerspassport.com/wp-content/uploads/2019/06/Insta_Presets_Featured22-1440x960.jpg"
+            imageURL="firstinfo.jpg"
             followerCount="52K"
           />
         </a>
@@ -119,7 +120,7 @@ const externalLink = '/newsletter';
       <InfoCard
             label=""
             title="Follow Our Twitter!"
-            imageURL="https://thefederalist.com/wp-content/uploads/2021/09/twitter-e1631558832208.jpeg"
+            imageURL="secondinfo.jpeg"
             followerCount="52K"
           />
         </a>
@@ -131,7 +132,7 @@ const externalLink = '/newsletter';
       <InfoCard
             label=""
             title="Subscribe to our YouTube!"
-            imageURL="https://th.bing.com/th/id/OIP.zLqRgHv5VcaWgz7CQSMuUgHaE8?rs=1&pid=ImgDetMain"
+            imageURL="thirdinfo.jpg"
             followerCount="52K"
           />
         </a>
@@ -162,6 +163,7 @@ const externalLink = '/newsletter';
       </br>
       <br>
       </br>
+      </div>
     </Container>
   )
 }
