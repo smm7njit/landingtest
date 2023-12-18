@@ -41,7 +41,7 @@ const InfoCard: NextPage<Props> = (props) => {
                     </Col>
                     <Col>
                         <Row justify="flex-end">
-                            <Button flat auto rounded color="primary">
+                            <Button flat auto rounded bordered color="error">
                                 <Text
                                     css={{color: "inherit"}}
                                     size={12}

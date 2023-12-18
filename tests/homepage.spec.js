@@ -2,9 +2,9 @@ const { test, expect } = require('@playwright/test');
 
 const landingURL = 'http://localhost:3000';
 
-test('Check if Main Page text is present', async ({ page }) => {
+test('Check if Navbar text is present', async ({ page }) => {
     await page.goto(landingURL);
-    await page.getByText('Our Soda Brand').click();
+    await page.getByText('Velvet').click();
   });
 
 test('Check if More link goes to Newsletter', async ({ page }) => {

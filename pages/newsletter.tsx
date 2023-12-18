@@ -15,17 +15,26 @@ const Newsletter = () => {
 const homeLink = '/index';
   return (
     <Container>
-        <Navbar isCompact variant={"static"} css={{"backgroundImage": "url(https://cdn.suwalls.com/wallpapers/abstract/purple-squares-43497-2560x1600.jpg)"}}>
+        <Navbar>
         <Navbar.Brand>
           <Text b color="inherit">
-            Velvet.
+            Velvet
           </Text>
         </Navbar.Brand>
         <Navbar.Content hideIn="md">
           <Navbar.Brand> Established in 1970</Navbar.Brand>
         </Navbar.Content>
         <Navbar.Content>
-          <Navbar.Link href="/">Home</Navbar.Link>
+        <Link href="/" passHref>
+        <Button
+        as="a" // Use the 'a' element for an external link
+        size="sm"
+        bordered color="gradient"
+        css={{"width": "20%", "marginTop": "10px"}}
+      >
+        To Home Page
+      </Button>
+      </Link>
         </Navbar.Content>
       </Navbar>
       <br>
@@ -36,6 +45,12 @@ const homeLink = '/index';
     <h2>Sign up for newsletters and our rewards program here:</h2>
     <NewsletterForm />
     </div>
+    <br>
+      </br>
+      <br>
+      </br>
+      <br>
+      </br>
     </Container>
   );
 };

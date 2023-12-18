@@ -10,6 +10,8 @@ import {Textarea} from "@nextui-org/react";
 import NewsletterForm from '../components/NewsletterForm'
 import CookieConsent from 'react-cookie-consent';
 import Header from '../components/Header';
+import { css } from '@nextui-org/react';
+
 
 
 
@@ -27,17 +29,26 @@ const externalLink = '/newsletter';
       <Header />
       
       {/* Navbar */}
-      <Navbar isCompact variant={"static"} css={{"backgroundImage": "url(https://cdn.suwalls.com/wallpapers/abstract/purple-squares-43497-2560x1600.jpg)"}}>
+      <Navbar>
         <Navbar.Brand>
           <Text b color="inherit">
-            Velvet.
+            Velvet
           </Text>
         </Navbar.Brand>
         <Navbar.Content hideIn="md">
           <Navbar.Brand> Established in 1970</Navbar.Brand>
         </Navbar.Content>
         <Navbar.Content>
-          <Navbar.Link href="/newsletter">More</Navbar.Link>
+        <Link href={externalLink} passHref>
+        <Button
+        as="a" // Use the 'a' element for an external link
+        size="sm"
+        bordered color="gradient"
+        css={{"width": "20%", "marginTop": "10px"}}
+      >
+        To Our Newsletter
+      </Button>
+      </Link>
         </Navbar.Content>
       </Navbar>
       <br>
@@ -58,7 +69,7 @@ const externalLink = '/newsletter';
       </br>
       <br>
       </br>
-      <Grid.Container justify="center" css={{"height": "500px", "borderRadius": "10px", "backgroundImage": "url(https://onthegas.org/wp-content/uploads/2019/02/alcohol-cocktail-purple-people-eater.jpg)"}}>
+      <Grid.Container justify="center" css={{"height": "500px", "borderRadius": "10px", "backgroundImage": "url(https://cdn.discordapp.com/attachments/918054777538117642/1186214740142329886/AdobeStock_284656117_Editorial_Use_Only_1_4.png?ex=65926f90&is=657ffa90&hm=9bf5249984bbc6668c44ac0bf69f3a995f0be8ce1234c3b214e72379252bc71c&)"}}>
         <Grid xs={12} sm={6} alignItems="center">
           <Col css={{"width": "100%"}}>
             <Text weight={"bold"} size={70} css={{"textAlign": "center"}}>Drink. Shop.</Text>
@@ -68,8 +79,7 @@ const externalLink = '/newsletter';
       <Button
         as="a" // Use the 'a' element for a link
         size="md"
-        shadow
-        color="gradient"
+        color="error"
         css={{"width": "100%", "marginTop": "10px"}}
       >
         Discover More
@@ -140,7 +150,7 @@ const externalLink = '/newsletter';
       <Button
         as="a" // Use the 'a' element for an external link
         size="sm"
-        shadow
+        bordered
         color="gradient"
         css={{"width": "20%", "marginTop": "10px"}}
       >

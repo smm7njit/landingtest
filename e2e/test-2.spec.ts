@@ -7,7 +7,7 @@ test('Test hero section text is present', async ({ page }) => {
 
 test('Check link to Newsletter works', async ({ page }) => {
   await page.goto('http://localhost:3000/');
-  await page.getByRole('link', { name: 'More' }).click();
+  await page.getByRole('link', { name: 'To Our' }).click();
 });
 
 test('Check if newsletter page text is present', async ({ page }) => {
@@ -22,7 +22,7 @@ test('Check if email box placeholder is present', async ({ page }) => {
 
 test('Check if Home link functions', async ({ page }) => {
   await page.goto('http://localhost:3000/');
-  await page.getByRole('link', { name: 'Home' }).click();
+  await page.getByRole('link', { name: 'To Our Newsletter' }).click();
 });
 
 test('Check if second part of hero section is present', async ({ page }) => {
