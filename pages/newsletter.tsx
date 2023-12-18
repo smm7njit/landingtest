@@ -42,8 +42,11 @@ const homeLink = '/index';
       <br>
       </br>
     <div className={styles.center}>
-    <h2>Sign up for newsletters and our rewards program here:</h2>
-    <NewsletterForm />
+    <h2 text-color="black">Sign up for newsletters and our rewards program here:</h2>
+    <div className={styles.centered}>
+    <NewsletterForm 
+    />
+    </div>
     </div>
     <br>
       </br>
