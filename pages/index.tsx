@@ -10,7 +10,6 @@ import {Textarea} from "@nextui-org/react";
 import NewsletterForm from '../components/NewsletterForm'
 import CookieConsent from 'react-cookie-consent';
 import Header from '../components/Header';
-import { createTheme, NextUIProvider } from "@nextui-org/react"
 
 
 
