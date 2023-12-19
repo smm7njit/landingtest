@@ -11,6 +11,10 @@ a {
   text-decoration: none;
 }
 
+
+
+
+
 * {
   box-sizing: border-box;
 }
@@ -22,6 +26,7 @@ a {
   body {
     color: white;
     background: black;
-    background: linear-gradient(to right, #070707, #FF0000, #662727);
+    background: linear-gradient(to top, #070707, #FF0000, #662727);
   }
+
 }

@@ -130,6 +130,14 @@
 
 }
 
+.homefooter {
+  background:black;
+  border-radius: 10px;
+  background-size: 'cover';
+  object-fit: contain;
+
+}
+
 .centered {
   display: flex;
   justify-content: space-around;

@@ -57,39 +57,71 @@ const externalLink = '/newsletter';
       <br>
       </br>
       {/* Jumbotron */}
-      <Grid.Container justify="center" css={{"height": "500px", "borderRadius": "10px",  "backgroundImage": "url(/jumbo.png)",}}>
-        <Grid xs={12} sm={6} alignItems="center">
-          <Col css={{"width": "100%"}}>
-            <Text weight={"bold"} size={60} css={{"textAlign": "center"}}>When it comes to beverages,</Text>
-            <Text weight={"bold"} size={60} css={{"textAlign": "center"}}>we&#39;re liquid craftsmen.</Text>
-            <Text weight={"normal"} size={25} css={{"textAlign": "center"}}>We always guarantee that our beverages will amaze your taste buds.</Text>
-          </Col>
-        </Grid>
-      </Grid.Container>
+      <Grid.Container
+    justify="center"
+    css={{
+      height: '100vh', // Set height to 100% of the viewport height
+      borderRadius: '10px',
+      backgroundImage: 'url(/jumbo.png)',
+      backgroundSize: 'cover', // Adjust this based on your design needs
+      width: '100%', // Set width to 100% of the viewport width
+      objectFit: 'cover',
+    }}
+  >
+    <Grid xs={12} sm={6} alignItems="center">
+      <Col css={{ width: '100%' }}>
+        <Text weight="bold" size={60} css={{ textAlign: 'center', color: '#fff' }}>
+          When it comes to beverages,
+        </Text>
+        <Text weight="bold" size={60} css={{ textAlign: 'center', color: '#fff' }}>
+          we're liquid craftsmen.
+        </Text>
+        <Text weight="normal" size={25} css={{ textAlign: 'center', color: '#fff' }}>
+          We always guarantee that our beverages will amaze your taste buds.
+        </Text>
+      </Col>
+    </Grid>
+  </Grid.Container>
       <br>
       </br>
       <br>
       </br>
-      <Grid.Container justify="center" css={{"height": "500px", "borderRadius": "10px", "backgroundImage": "url(/jumbotwo.png)"}}>
-        <Grid xs={12} sm={6} alignItems="center">
-          <Col css={{"width": "100%"}}>
-            <Text weight={"bold"} size={70} css={{"textAlign": "center"}}>Drink. Shop.</Text>
-            <Text weight={"bold"} size={70} css={{"textAlign": "center"}}>Taste. Smile.</Text>
-            <Text weight={"normal"} size={35} css={{"textAlign": "center"}}>Discover our rewards program, featuring soda coupons and chances to try new flavors.</Text>
-            <Link href={externalLink} passHref>
-      <Button
-        as="a" // Use the 'a' element for a link
-        size="md"
-        shadow
-        color="error"
-        css={{"width": "100%", "marginTop": "10px"}}
-      >
-        Discover More
-      </Button>
-    </Link>
-          </Col>
-        </Grid>
-      </Grid.Container>
+      <Grid.Container
+    justify="center"
+    css={{
+      height: '100vh', // Adjust the height as needed
+      borderRadius: '10px',
+      backgroundImage: 'url(/jumbotwo.png)', // Change the background image path
+      backgroundSize: 'cover', // Adjust this based on your design needs
+      width: '100%', // Set width to 100% of the viewport width
+      objectFit: 'cover', // Note: objectFit is not applicable for the 'backgroundImage' property
+    }}
+  >
+    <Grid xs={12} sm={6} alignItems="center">
+      <Col css={{ width: '100%' }}>
+        <Text weight="bold" size={70} css={{ textAlign: 'center', color: '#fff' }}>
+          Drink. Shop.
+        </Text>
+        <Text weight="bold" size={70} css={{ textAlign: 'center', color: '#fff' }}>
+          Taste. Smile.
+        </Text>
+        <Text weight="normal" size={35} css={{ textAlign: 'center', color: '#fff' }}>
+          Discover our rewards program, featuring soda coupons and chances to try new flavors.
+        </Text>
+        <Link href={externalLink} passHref>
+          <Button
+            as="a" // Use the 'a' element for a link
+            size="md"
+            shadow
+            color="error"
+            css={{ width: '100%', marginTop: '10px' }}
+          >
+            Discover More
+          </Button>
+        </Link>
+      </Col>
+    </Grid>
+  </Grid.Container>
       <br>
       </br>
       <br>
@@ -160,11 +192,11 @@ const externalLink = '/newsletter';
       </Button>
       
     </Link>
-      <br>
+    <br>
       </br>
       <br>
       </br>
-      </div>
+    </div>
     </Container>
   )
 }
