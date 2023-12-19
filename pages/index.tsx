@@ -77,7 +77,7 @@ const externalLink = '/newsletter';
           Craftsmen.
         </Text>
         <Text weight="normal" size={25} css={{ textAlign: 'center', color: '#fff' }}>
-          Tons of classic flavors, developed in-house for over fifty years.
+        Try one of our many classic flavors, developed in-house for over fifty years.
         </Text>
       </Col>
     </Grid>
