@@ -71,13 +71,13 @@ const externalLink = '/newsletter';
     <Grid xs={12} sm={6} alignItems="center">
       <Col css={{ width: '100%' }}>
         <Text weight="bold" size={60} css={{ textAlign: 'center', color: '#fff' }}>
-          When it comes to beverages,
+          We&#39;re Liquid
         </Text>
         <Text weight="bold" size={60} css={{ textAlign: 'center', color: '#fff' }}>
-          we&#39;re liquid craftsmen.
+          Craftsmen.
         </Text>
         <Text weight="normal" size={25} css={{ textAlign: 'center', color: '#fff' }}>
-          We always guarantee that our beverages will amaze your taste buds.
+          Tons of classic flavors, developed in-house for over fifty years.
         </Text>
       </Col>
     </Grid>

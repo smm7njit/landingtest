@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 
 test('Test hero section text is present', async ({ page }) => {
   await page.goto('http://localhost:3000/');
-  await page.getByText('When it comes to beverages,').click();
+  await page.getByText("We're Liquid").click();
 });
 
 test('Check link to Newsletter works', async ({ page }) => {
@@ -27,12 +27,12 @@ test('Check if Home link functions', async ({ page }) => {
 
 test('Check if second part of hero section is present', async ({ page }) => {
   await page.goto('http://localhost:3000/');
-  await page.getByText('we\'re liquid craftsmen.').click();
+  await page.getByText('Craftsmen.').click();
 });
 
 test('Check if subtext of hero section is present', async ({ page }) => {
   await page.goto('http://localhost:3000/');
-  await page.getByText('We always guarantee that our').click();
+  await page.getByText('Tons of classic flavors,').click();
 });
 
 test('Check if first jumbotron component is visible', async ({ page }) => {
