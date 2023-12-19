@@ -21,7 +21,7 @@ const Home: NextPage = () => {
 const externalLink = '/newsletter';
   return (
     <Container>
-      <title>IS Final</title>
+      <title>2023 Final</title>
       <div className='bg red-500'>
       <CookieConsent>
       We use cookies to improve your experience. By your continued use of this site you accept such use.
