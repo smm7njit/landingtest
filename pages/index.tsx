@@ -74,7 +74,7 @@ const externalLink = '/newsletter';
           When it comes to beverages,
         </Text>
         <Text weight="bold" size={60} css={{ textAlign: 'center', color: '#fff' }}>
-          we're liquid craftsmen.
+          we&#39;re liquid craftsmen.
         </Text>
         <Text weight="normal" size={25} css={{ textAlign: 'center', color: '#fff' }}>
           We always guarantee that our beverages will amaze your taste buds.
